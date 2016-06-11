@@ -106,6 +106,9 @@ html.oldMessageBackground .nim-dialog--unread._im_dialog_unread_ct:not(:empty)::
   opacity: 0.5;
 }
 
+html.oldMessageBackground .im-page--header.ui_search._im_dialogs_search {
+  z-index: 102;
+}
 
 /* Фиксированное меню*/
 
