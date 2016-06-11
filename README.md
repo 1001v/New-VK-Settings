@@ -15,6 +15,10 @@
 * Google Chrome
 * Opera
 
+## Ссылки
+
+* [Интернет-магазин Chrome] (https://chrome.google.com/webstore/detail/new-vk-settings/ekpjgpjkepibbmlobolhofkagodfjnam/related?hl=ru)
+
 ## Использованные технологии
 
 *  [Google AngularJS] (https://angularjs.org/)
