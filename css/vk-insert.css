@@ -1,0 +1,115 @@
+/* Квадратные аватары */
+
+html.sqrAvatars .module_body .people_cell_img,
+html.sqrAvatars .page_list_module .thumb,
+html.sqrAvatars .page_list_module .cell_img,
+html.sqrAvatars .post_img,
+html.sqrAvatars .wall_module .copy_post_img,
+html.sqrAvatars .wall_module .reply_img,
+html.sqrAvatars .nim-peer .nim-peer--photo-w,
+html.sqrAvatars .mv_author_img,
+html.sqrAvatars .friends_photo_img,
+html.sqrAvatars .right_list_img,
+html.sqrAvatars .top_profile_img,
+html.sqrAvatars .group_row_photo,
+html.sqrAvatars .group_row_img,
+html.sqrAvatars .nim-peer .nim-peer--photo-w,
+html.sqrAvatars .ow_ava.ow_ava_small,
+html.sqrAvatars .fc_contact_photo,
+html.sqrAvatars .chat_tab_img {
+  border-radius: 3px;
+}
+
+html.sqrAvatars .text.ts_input{
+  border-radius: 3px;
+}
+
+html.sqrAvatars .audio_play,
+html.sqrAvatars .audio_page_player .audio_page_player_play .icon {
+  border-radius: 20%;
+}
+
+
+/* Белый фон */
+
+html.noBackground body {
+  background: none;
+}
+
+
+/* Скрывать блок справа при выборе диалогов*/
+
+html.hideRightBlock .im-page.js-im-page.im-page_classic:not(.history-show) + .page_block.ui_rmenu.im-right-menu._im_right_menu.ui_rmenu_pr {
+  display: none;
+}
+
+
+/* Фон у непрочитанного сообщения вместо точки*/
+html.oldMessageBackground .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--unread {
+  bottom: 0px;
+}
+
+html.oldMessageBackground .nim-dialog--name,
+html.oldMessageBackground .nim-dialog--text-preview {
+  z-index: 100;
+  position: relative;
+}
+
+html.oldMessageBackground .nim-dialog--close._im_dialog_close, html.oldMessageBackground .nim-dialog--date._im_dialog_date {
+  z-index: 101;
+  display: none;
+}
+
+html.oldMessageBackground .nim-dialog--photo {
+  z-index: 101;
+  position: relative;
+}
+
+html.oldMessageBackground .nim-dialog .nim-dialog--preview {
+  color: #67829E;
+}
+
+html.oldMessageBackground .nim-dialog--unread._im_dialog_unread_ct:empty {
+  bottom: 0px;
+  right: 0px;
+  border-radius: 0px;
+  width: 99%;
+  height: 75%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  background: #edf1f5;
+  color: #67829E;
+  border-color: #DAE1E8;
+  z-index: 0;
+}
+
+html.oldMessageBackground .nim-dialog--unread._im_dialog_unread_ct:not(:empty) {
+  margin: 0 3px;
+  background: #D1DAE3;
+  padding: 4px 4px 4px 4px;
+  font-weight: bold;
+  color: #436796;
+  border-radius: 2px;
+  z-index: 99;
+}
+
+html.oldMessageBackground .nim-dialog--unread._im_dialog_unread_ct:not(:empty)::before {
+  content: "";
+  border-radius: 0px;
+  background: #edf1f5;
+  width: 551px;
+  height: 70px;
+  position: absolute;
+  z-index: -1;
+  top: -28px;
+  left: -503px;
+  opacity: 0.5;
+}
+
+
+/* Фиксированное меню*/
+
+#side_bar_inner_fixed {
+  margin-top: 0px !important;
+  top: 46px;
+}
