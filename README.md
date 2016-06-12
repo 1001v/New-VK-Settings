@@ -19,6 +19,14 @@
 
 * [Интернет-магазин Chrome] (https://chrome.google.com/webstore/detail/new-vk-settings/ekpjgpjkepibbmlobolhofkagodfjnam/related?hl=ru)
 
+## Последние изменения
+
+#### v0.4
+Добавлено:
+* Изменение контрастности
+* Установка старых шрифтов
+* Старый вид кнопок аудио
+
 ## Использованные технологии
 
 *  [Google AngularJS] (https://angularjs.org/)
