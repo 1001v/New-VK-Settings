@@ -28,11 +28,6 @@ html.sqrAvatars .text.ts_input{
   border-radius: 2px;
 }
 
-html.sqrAvatars .audio_play,
-html.sqrAvatars .audio_page_player .audio_page_player_play .icon {
-  border-radius: 20%;
-}
-
 
 /* Белый фон */
 
@@ -142,6 +137,32 @@ html.oldFonts body {
 }
 
 
+/* Старый размер кнопок аудио */
+
+html.oldAudioSize .audio_play,
+html.oldAudioSize .audio_page_player .audio_page_player_play .icon {
+  border-radius: 20%;
+  background-position: -3px -3px;
+  width: 22px;
+  height: 22px;
+}
+
+html.oldAudioSize .audio_page_player_ctrl.audio_page_player_play._audio_page_player_play {
+  padding-top: 18px;
+}
+
+html.oldAudioSize .audio_play {
+  width: 16px;
+  height: 16px;
+  background-size: 8px;
+  background-position: 4px 4px;
+}
+
+html.oldAudioSize .audio_row .audio_play_wrap {
+  padding: 5px 0px 0px 0px;
+}
+
+
 /* Высокий контраст */
 
 html.highContrast .module_header .header_top{
@@ -181,7 +202,20 @@ html.highContrast .im-page.im-page_classic .im-page--header-inner{
 }
 
 html.highContrast .im-page.im-page_classic .im-page--header-chat{
-  border-top: solid 17px #fff; 
+  border-top: solid 17px #fff;
   border-left: solid 1px #fff;
   border-right: solid 1px #fff;
+}
+
+html.highContrast .im-page.im-page_classic .im-page--header{
+  border-top: solid 15px #fff;
+}
+
+html.highContrast .wall_module > .page_block {
+  background: #DEE5EB;
+}
+
+html.highContrast .wall_module > .page_block a {
+  color: #45688E;
+  border-bottom: none;
 }
