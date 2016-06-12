@@ -136,3 +136,16 @@ html.oldMessageBackground .im-page--header.ui_search._im_dialogs_search {
 html.oldFonts body {
   font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
 }
+
+
+/* Высокий контраст */
+
+html.highContrast .module_header .header_top{
+  line-height: 30px; 
+  color: #45688E;
+  background: #DEE5EB;
+}
+
+html.highContrast .module_header .header_top .right_link{
+  color: inherit;
+}

@@ -30,7 +30,8 @@ angular.module("vk-settings", ["ui.bootstrap"])
       noBackground: false,
       hideRightBlock: false,
       oldMessageBackground: false,
-      oldFonts: false
+      oldFonts: false,
+      highContrast: false
     };
   }
 
