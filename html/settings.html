@@ -46,6 +46,11 @@
                 <button ng-model="settings.oldMessageBackground" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.oldMessageBackground}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>Ваши непрочитанные сообщения будут отмечаться в списке диалогов фоном, а не точкой</p>
               </li>
+              <li class="list-group-item list-settings">
+                <h4>Классические шрифты</h4>
+                <button ng-model="settings.oldFonts" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.oldFonts}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>Шрифты Open Sans, Helvetica Neue, sans-serif будут заменены на tahoma, arial, verdana, sans-serif, Lucida Sans из старой версии сайта</p>
+              </li>
               <!--
               <li class="list-group-item list-settings">
                 <h4>Скрывать правый блок в списке диалогов</h4>
@@ -91,7 +96,7 @@
     <button title="Сбросить все настройки" ng-click="openResetModal()" class="btn btn-danger btn-reset pull-right box-shadow--2dp"><span class="glyphicon glyphicon-trash"></span></button>
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">{{manifest.browser_action.default_title}} {{manifest.version}} alpha © 1001v</p>
+        <p class="text-muted">{{manifest.browser_action.default_title}} {{manifest.version}} beta © 1001v</p>
       </div>
     </footer>
     <script src="/js/angular.min.js"></script>

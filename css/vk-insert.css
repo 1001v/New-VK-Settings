@@ -116,3 +116,10 @@ html.oldMessageBackground .im-page--header.ui_search._im_dialogs_search {
   margin-top: 0px !important;
   top: 46px;
 }
+
+
+/* Старые шрифты */
+
+html.oldFonts body {
+  font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+}

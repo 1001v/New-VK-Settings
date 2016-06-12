@@ -29,7 +29,8 @@ angular.module("vk-settings", ["ui.bootstrap"])
       sqrAvatars: false,
       noBackground: false,
       hideRightBlock: false,
-      oldMessageBackground: false
+      oldMessageBackground: false,
+      oldFonts: false
     };
   }
 
@@ -51,7 +52,15 @@ angular.module("vk-settings", ["ui.bootstrap"])
       return getDefaultSettings();
     } else {
       console.log("Настройки успешно считаны.");
-      return JSON.parse(localStorage['settings']);
+      var settings = JSON.parse(localStorage['settings']);
+      var defaultSettings = getDefaultSettings();
+      for (var setting in defaultSettings)
+        if (settings[setting] === undefined) {
+          initializing = false;
+          console.log("Отсутствует настройка " + setting)
+          settings[setting] = defaultSettings[setting];
+        }
+      return settings;
     }
   }
 
