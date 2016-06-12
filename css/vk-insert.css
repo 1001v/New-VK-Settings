@@ -36,18 +36,17 @@ html.noBackground body {
   background: none;
 }
 
-html.noBackground .feed_row .wide_column_left .wide_column {
+html.noBackground .wide_column_left .wide_column {
   float: left;
   border-left: 1px solid #e6e7eb;
   border-right: 1px solid #e6e7eb;
-  box-shadow: none;
 }
 
 html.noBackground .feed_row .page_block {
-  /* box-shadow: 0 0px 0 0 #e1e2e6, 0 -1px 0 1px #e6e7eb; */
   margin: 15px 0 0;
   border: 1px solid #e6e7eb;
   border-width: 0px 0px 1px 0px;
+  box-shadow: none;
 }
 
 
