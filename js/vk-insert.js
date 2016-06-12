@@ -3,6 +3,10 @@ var settings;
 var functions = {
   "fixMenu": function() {
     jQuery("#side_bar_inner").css("position", "fixed").attr("id", "side_bar_inner_fixed");
+  },
+  "returnDurov": function() {
+    //console.log(jQuery("#bottom_nav .footer_copy.fl_l"));
+    jQuery("#bottom_nav .footer_copy.fl_l").html(jQuery("#bottom_nav .footer_copy.fl_l").text() + " <a href='/durov'>Павел Дуров</a>");
   }
 }
 

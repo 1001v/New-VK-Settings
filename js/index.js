@@ -32,7 +32,8 @@ angular.module("vk-settings", ["ui.bootstrap"])
       oldMessageBackground: false,
       oldFonts: false,
       highContrast: false,
-      oldAudioSize: false
+      oldAudioSize: false,
+      returnDurov: false
     };
   }
 
