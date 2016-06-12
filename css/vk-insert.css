@@ -16,12 +16,16 @@ html.sqrAvatars .group_row_img,
 html.sqrAvatars .nim-peer .nim-peer--photo-w,
 html.sqrAvatars .ow_ava.ow_ava_small,
 html.sqrAvatars .fc_contact_photo,
-html.sqrAvatars .chat_tab_img {
-  border-radius: 3px;
+html.sqrAvatars .chat_tab_img,
+html.sqrAvatars .like_tt_owner,
+html.sqrAvatars .poll_tt_ownerx,
+html.sqrAvatars .like_tt_image,
+html.sqrAvatars .ow_ava.ow_ava_comm {
+  border-radius: 2px;
 }
 
 html.sqrAvatars .text.ts_input{
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 html.sqrAvatars .audio_play,
@@ -141,11 +145,43 @@ html.oldFonts body {
 /* Высокий контраст */
 
 html.highContrast .module_header .header_top{
-  line-height: 30px; 
+  line-height: 30px;
   color: #45688E;
   background: #DEE5EB;
 }
 
 html.highContrast .module_header .header_top .right_link{
   color: inherit;
+}
+
+html.highContrast .im-chat-input .im-chat-input--textarea .placeholder {
+  position: absolute;
+  top: 21px;
+  left: 2px;
+  width: 100%;
+}
+
+
+html.highContrast .im-page.im-page_classic .im-page--chat-input {
+  border-bottom: solid 15px #fff;
+  border-left: solid 1px #fff;
+  border-right: solid 2px #fff;
+  background: #f2f2f2;
+}
+
+html.highContrast .im-chat-input .im-chat-input--text{
+  border: solid 1px #e4e6e9;
+  -o-transition: border-bottom-color 0.3s linear;
+  transition: border-color 0.3s linear;
+  padding: 2px;
+}
+
+html.highContrast .im-page.im-page_classic .im-page--header-inner{
+  background: #f2f2f2;
+}
+
+html.highContrast .im-page.im-page_classic .im-page--header-chat{
+  border-top: solid 17px #fff; 
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
 }

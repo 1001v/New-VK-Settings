@@ -121,3 +121,7 @@ body > .container {
 .list-group {
   padding-bottom: 100px;
 }
+
+.tabs-settings, nav {
+  position: fixed;
+}

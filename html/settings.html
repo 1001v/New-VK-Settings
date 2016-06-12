@@ -18,7 +18,7 @@
     <h3 class="text-center"><span ng-if="changes" class="label label-danger">Требуется перезагрузить vk.com</span></h3>
     <div class="row">
       <div class="col-xs-1"></div>
-      <div class="col-xs-2">
+      <div class="col-xs-2 tabs-settings">
         <uib-tabset active="active" vertical="true" type="pills">
           <uib-tab index="0" heading="Внешний вид"></uib-tab>
           <uib-tab index="1" heading="Поведение"></uib-tab>
@@ -54,7 +54,7 @@
               <li class="list-group-item list-settings">
                 <h4>Высокий контраст</h4>
                 <button ng-model="settings.highContrast" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.highContrast}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
-                <p>Контраст сайта будет приближен в старой версии</p>
+                <p>Контраст сайта будет приближен в старой версии (лучший эффект достигается совместно с использованием белого фона)</p>
               </li>
               <!--
               <li class="list-group-item list-settings">
