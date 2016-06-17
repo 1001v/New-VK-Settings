@@ -20,12 +20,14 @@ html.sqrAvatars .chat_tab_img,
 html.sqrAvatars .like_tt_owner,
 html.sqrAvatars .poll_tt_ownerx,
 html.sqrAvatars .like_tt_image,
-html.sqrAvatars .ow_ava.ow_ava_comm {
-  border-radius: 2px;
+html.sqrAvatars .ow_ava.ow_ava_comm,
+html.sqrAvatars .feedback_img,
+html.sqrAvatars .notifier_image {
+  border-radius: 0px;
 }
 
 html.sqrAvatars .text.ts_input{
-  border-radius: 2px;
+  border-radius: 0px;
 }
 
 
@@ -41,12 +43,14 @@ html.noBackground .wide_column_left .wide_column {
   border-right: 1px solid #e6e7eb;
 }
 
-html.noBackground .feed_row .page_block {
-  margin: 15px 0 0;
+html.noBackground .feed_row .page_block, html.noBackground #page_wall_posts .page_block {
+  margin: 15px 0px 0px;
   border: 1px solid #e6e7eb;
   border-width: 0px 0px 1px 0px;
   box-shadow: none;
 }
+
+
 
 
 /* Скрывать блок справа при выборе диалогов*/
@@ -96,7 +100,7 @@ html.oldMessageBackground .nim-dialog--unread._im_dialog_unread_ct:empty {
 }
 
 html.oldMessageBackground .nim-dialog--unread._im_dialog_unread_ct:not(:empty) {
-  margin: 0 3px;
+  margin: 0px 3px;
   background: #D1DAE3;
   padding: 4px 4px 4px 4px;
   font-weight: bold;
@@ -152,26 +156,39 @@ html.oldAudioSize .audio_page_player_ctrl.audio_page_player_play._audio_page_pla
 }
 
 html.oldAudioSize .audio_play {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   background-size: 8px;
-  background-position: 4px 4px;
+  background-position: 5px 4px;
+}
+
+html.oldAudioSize .audio_play .icon {
+  width: 9px;
+  height: 9px;
 }
 
 html.oldAudioSize .audio_row .audio_play_wrap {
   padding: 5px 0px 0px 0px;
 }
 
+html.oldAudioSize .audio_page_player_ctrl.audio_page_player_play._audio_page_player_play.audio_playing .icon{
+  background-position: -3px -59px;
+}
+
+html.oldAudioSize .audio_row_playing .audio_play {
+  background-position: 5px -15px;
+}
+
 
 /* Высокий контраст */
 
-html.highContrast .module_header .header_top{
+html.highContrast .module_header .header_top {
   line-height: 30px;
   color: #45688E;
   background: #DEE5EB;
 }
 
-html.highContrast .module_header .header_top .right_link{
+html.highContrast .module_header .header_top .right_link {
   color: inherit;
 }
 
@@ -190,24 +207,24 @@ html.highContrast .im-page.im-page_classic .im-page--chat-input {
   background: #f2f2f2;
 }
 
-html.highContrast .im-chat-input .im-chat-input--text{
+html.highContrast .im-chat-input .im-chat-input--text {
   border: solid 1px #e4e6e9;
   -o-transition: border-bottom-color 0.3s linear;
   transition: border-color 0.3s linear;
   padding: 2px;
 }
 
-html.highContrast .im-page.im-page_classic .im-page--header-inner{
+html.highContrast .im-page.im-page_classic .im-page--header-inner {
   background: #f2f2f2;
 }
 
-html.highContrast .im-page.im-page_classic .im-page--header-chat{
+html.highContrast .im-page.im-page_classic .im-page--header-chat {
   border-top: solid 17px #fff;
   border-left: solid 1px #fff;
   border-right: solid 1px #fff;
 }
 
-html.highContrast .im-page.im-page_classic .im-page--header{
+html.highContrast .im-page.im-page_classic .im-page--header {
   border-top: solid 15px #fff;
 }
 

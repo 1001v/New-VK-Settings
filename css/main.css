@@ -64,8 +64,12 @@ body > .container {
 }
 
 .list-group-item.list-settings p {
-  padding-top: 20px;
+  padding-top: 10px;
   color: #65686c;
+}
+
+.list-group-item.list-settings h4 {
+  margin-bottom: 0px;
 }
 .vk-checkbox {
   height: 25px;
@@ -74,6 +78,7 @@ body > .container {
   text-align: center;
   padding-left: 4px;
   padding-top: 2px;
+  margin-top: 10px;
   margin-left: 5px;
 }
 
