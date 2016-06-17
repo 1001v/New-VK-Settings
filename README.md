@@ -14,6 +14,9 @@
 * Google Chrome
 * Opera
 
+## Для пользователей Opera
+Для установки расширения из Google Store необходимо установить расширение [Download Chrome Extension] (https://addons.opera.com/ru/extensions/details/download-chrome-extension-9/?display=en).
+
 ## Ссылки
 
 * [Интернет-магазин Chrome] (https://chrome.google.com/webstore/detail/new-vk-settings/ekpjgpjkepibbmlobolhofkagodfjnam?hl=ru)
