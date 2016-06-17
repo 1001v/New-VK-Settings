@@ -1,5 +1,5 @@
-angular.module("vk-settings", ["ui.bootstrap"])
-.controller("settingsCtrl", function($scope, $uibModal, $rootScope){
+angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
+.controller("settingsCtrl", function($scope, $uibModal, $rootScope, toastr){
 
   $scope.manifest = chrome.runtime.getManifest();
 
@@ -7,7 +7,6 @@ angular.module("vk-settings", ["ui.bootstrap"])
     localStorage['firstLaunch'] = false;
     $scope.helloModal = $uibModal.open({
       animation: true,
-      size: 'sm',
       templateUrl: '/html/helloModal.html'
     });
   }
@@ -17,6 +16,8 @@ angular.module("vk-settings", ["ui.bootstrap"])
       $scope.helloModal.close();
     if ($scope.resetModal !== undefined)
       $scope.resetModal.close();
+    if ($scope.applyModal !== undefined)
+      $scope.applyModal.close();
   }
 
 
@@ -41,6 +42,7 @@ angular.module("vk-settings", ["ui.bootstrap"])
     $scope.$watchCollection("settings", function() {
       if (! initializing) {
         $scope.changes = true;
+        toastr.info('', 'Требуется перезагрузить vk.com');
         console.log("Настройка изменена.");
         $scope.writeSettings();
       } else
@@ -73,10 +75,22 @@ angular.module("vk-settings", ["ui.bootstrap"])
   }
 
   $rootScope.resetSettings = function() {
+    initializing = true;
     console.log("Сброс настроек.");
     $scope.settings = getDefaultSettings();
-    $scope.writeSettings();
     $scope.close();
+    toastr.success('Требуется перезагрузить vk.com', 'Настройки сброшены');
+    $scope.writeSettings();
+  }
+
+  $rootScope.applySettings = function() {
+    initializing = true;
+    console.log("Применение настроек.");
+    for (setting in $scope.settings)
+      $scope.settings[setting] = true;
+    $scope.close();
+    toastr.success('Требуется перезагрузить vk.com', 'Настройки применены');
+    $scope.writeSettings();
   }
 
   $scope.deleteSettings = function() {
@@ -95,12 +109,29 @@ angular.module("vk-settings", ["ui.bootstrap"])
   $scope.openResetModal = function() {
     $scope.resetModal = $uibModal.open({
       animation: true,
-      size: 'sm',
       templateUrl: '/html/resetModal.html'
+    });
+  }
+
+  $scope.openApplyModal = function() {
+    $scope.applyModal = $uibModal.open({
+      animation: true,
+      templateUrl: '/html/applyModal.html'
     });
   }
 
   $scope.settings = getSettings();
   startWatching();
 
+}).config(function(toastrConfig) {
+  angular.extend(toastrConfig, {
+    autoDismiss: true,
+    containerId: 'toast-container',
+    maxOpened: 1,
+    newestOnTop: true,
+    positionClass: 'toast-bottom-left',
+    preventDuplicates: false,
+    preventOpenDuplicates: false,
+    target: 'body'
+  });
 });

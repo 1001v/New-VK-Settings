@@ -3,6 +3,7 @@
 <html ng-app="vk-settings" ng-controller="settingsCtrl" ng-cloak>
   <head>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/angular-toastr.min.css" />
     <link rel="stylesheet" href="/css/main.css">
     <meta charset="utf-8">
     <title>Настройки расширения</title>
@@ -15,7 +16,7 @@
         </div>
       </div>
     </nav>
-    <h3 class="text-center"><span ng-if="changes" class="label label-danger">Требуется перезагрузить vk.com</span></h3>
+    <!--<h3 class="text-center"><span ng-if="changes" class="label label-danger">Требуется перезагрузить vk.com</span></h3>-->
     <div class="row">
       <div class="col-xs-1"></div>
       <div class="col-xs-2 tabs-settings">
@@ -66,12 +67,12 @@
                 <button ng-model="settings.returnDurov" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.returnDurov}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>Ссылка на Павла Дурова будет возвращена внизу страницы</p>
               </li>
-              <li class="list-group-item list-settings">
+              <li class="list-group-item disabled list-settings">
                 <h4>Вернуть стену <span class="label label-warning">VIP</span> <span class="label label-pill label-default">В разработке</span></h4>
                 <button class="btn btn-default disabled btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>Будет возвращена классическая стена из 2007</p>
               </li>
-              <li class="list-group-item list-settings">
+              <li class="list-group-item disabled list-settings">
                 <h4>Вернуть рейтинг <span class="label label-warning">VIP</span> <span class="label label-pill label-default">В разработке</span></h4>
                 <button class="btn btn-default disabled btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>Будет возвращен рейтинг из 2007</p>
@@ -107,11 +108,11 @@
               <p>Данное расширение призвано сгладить негативные эмоции от использования новой версии сайта vk.com, которая однажды станет единственной. В нем собраны различные настройки, позволяющие изменить внешний вид или
               поведение отдельных частей сайта.</p>
               <p>Расширение предназначено <b>только для новой версии</b> vk.com!</p>
-              <p>Изменения будут вступать в силу после перезагрузки сайта.</p>
+              <p>Изменения будут вступать в силу после <b>перезагрузки</b> сайта.</p>
               <p>Сообщить о проблеме или внести предложение можно по почтовому адресу <b>the1001v@gmail.com</b>.</p>
               <p>Вы можете поддержать разработчика и перевести любую сумму денег на webmoney <b>R239108061635</b>.</p>
               <p>Исходные тексты расширения доступны в <a target="_blank" href="https://github.com/1001v/New-VK-Settings">репозитории на сайте github.com</a>.</p>
-              <p>Версия расширения {{manifest.version}}</p>
+              <p>Версия расширения <b>{{manifest.version}}</b></p>
             </div>
           </uib-tab>
         </uib-tabset>
@@ -119,6 +120,7 @@
       </div>
       <div class="col-xs-1 right"></div>
     </div>
+      <button title="Применить все настройки" ng-click="openApplyModal()" class="btn btn-success btn-apply pull-right box-shadow--2dp"><span class="glyphicon glyphicon-ok"></span></button>
     <button title="Сбросить все настройки" ng-click="openResetModal()" class="btn btn-danger btn-reset pull-right box-shadow--2dp"><span class="glyphicon glyphicon-trash"></span></button>
     <footer class="footer">
       <div class="container">
@@ -129,6 +131,7 @@
     <script src="/js/angular-touch.min.js"></script>
     <script src="/js/angular-animate.min.js"></script>
     <script src="/js/ui-bootstrap-tpls-1.3.3.min.js"></script>
+    <script src="/js/angular-toastr.tpls.min.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>

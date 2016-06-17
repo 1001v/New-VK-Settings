@@ -35,6 +35,7 @@
 *  [Twitter Bootstrap] (http://getbootstrap.com/)
 *  [UI Bootstrap] (https://angular-ui.github.io/bootstrap/)
 *  [jQuery 3] (http://jquery.com/)
+*  [Angular-toastr] (https://github.com/Foxandxss/angular-toastr)
 
 ## Благодарности
 
