@@ -14,6 +14,8 @@ html.sqrAvatars .top_profile_img,
 html.sqrAvatars .group_row_photo,
 html.sqrAvatars .group_row_img,
 html.sqrAvatars .nim-peer .nim-peer--photo-w,
+html.sqrAvatars .nim-peer.nim-peer_small .im_grid>img,
+html.sqrAvatars .nim-peer .nim-peer--photo .im_grid>img,
 html.sqrAvatars .ow_ava.ow_ava_small,
 html.sqrAvatars .fc_contact_photo,
 html.sqrAvatars .chat_tab_img,
@@ -50,14 +52,6 @@ html.noBackground .feed_row .page_block, html.noBackground #page_wall_posts .pag
   box-shadow: none;
 }
 
-
-
-
-/* Скрывать блок справа при выборе диалогов*/
-
-html.hideRightBlock .im-page.js-im-page.im-page_classic:not(.history-show) + .page_block.ui_rmenu.im-right-menu._im_right_menu.ui_rmenu_pr {
-  display: none;
-}
 
 
 /* Фон у непрочитанного сообщения вместо точки*/
