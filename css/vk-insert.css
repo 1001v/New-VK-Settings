@@ -26,6 +26,7 @@ html.sqrAvatars .ow_ava.ow_ava_comm,
 html.sqrAvatars .feedback_img,
 html.sqrAvatars .notifier_image,
 html.sqrAvatars .nim-peer .nim-peer--photo>img,
+html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img,
 html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img {
   border-radius: 0px;
 }
@@ -208,6 +209,7 @@ html.highContrast .im-chat-input .im-chat-input--text {
   -o-transition: border-bottom-color 0.3s linear;
   transition: border-color 0.3s linear;
   padding: 2px;
+  padding-right: 25px;
 }
 
 html.highContrast .im-page.im-page_classic .im-page--header-inner {

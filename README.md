@@ -45,6 +45,7 @@
 ## Обратная связь
 
 * Email: **the1001v@gmail.com**
+* [Google-формы] (https://docs.google.com/forms/d/e/1FAIpQLSerKdH3TEDi2QzhV_-pVSenPq0Wm_GCmXajh-tKKJ6wbCyExg/viewform)
 
 ## Поддержка
 Вы можете поддержать данный проект любым из перечисленных способов:

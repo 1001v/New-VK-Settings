@@ -24,7 +24,8 @@
           <uib-tab index="0" heading="Внешний вид"></uib-tab>
           <uib-tab index="1" heading="Поведение"></uib-tab>
           <uib-tab index="2" heading="Благодарности"></uib-tab>
-          <uib-tab index="3" heading="О расширении"></uib-tab>
+          <uib-tab index="3" heading="Обратная связь"></uib-tab>
+          <uib-tab index="4" heading="О расширении"></uib-tab>
         </uib-tabset>
       </div>
       <div class="col-xs-8">
@@ -92,6 +93,11 @@
                 <button ng-model="settings.fixMenu" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.fixMenu}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>Меню сайта будет зафиксировано</p>
               </li>
+              <li class="list-group-item list-settings">
+                <h4>Кнопка уведомлений</h4>
+                <button ng-model="settings.menuNotif" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.menuNotif}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>В меню сайта появится кнопка со ссылкой на уведомления.</p>
+              </li>
             </ul>
           </uib-tab>
           <uib-tab index="2">
@@ -104,12 +110,14 @@
             </div>
           </uib-tab>
           <uib-tab index="3">
+              <iframe width="100%" height="1000px" frameborder="0" scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLSerKdH3TEDi2QzhV_-pVSenPq0Wm_GCmXajh-tKKJ6wbCyExg/viewform"></iframe>
+          </uib-tab>
+          <uib-tab index="4">
             <div class="vk-text-color">
               <p>Данное расширение призвано сгладить негативные эмоции от использования новой версии сайта vk.com, которая однажды станет единственной. В нем собраны различные настройки, позволяющие изменить внешний вид или
               поведение отдельных частей сайта.</p>
               <p>Расширение предназначено <b>только для новой версии</b> vk.com!</p>
               <p>Изменения будут вступать в силу после <b>перезагрузки</b> сайта.</p>
-              <p>Сообщить о проблеме или внести предложение можно по почтовому адресу <b>the1001v@gmail.com</b>.</p>
               <p>Вы можете поддержать разработчика и перевести любую сумму денег на webmoney <b>R239108061635</b>.</p>
               <p>Исходные тексты расширения доступны в <a target="_blank" href="https://github.com/1001v/New-VK-Settings">репозитории на сайте github.com</a>.</p>
               <p>Версия расширения <b>{{manifest.version}}</b></p>
@@ -127,6 +135,7 @@
         <p class="text-muted">{{manifest.browser_action.default_title}} {{manifest.version}} beta © 1001v</p>
       </div>
     </footer>
+    <script src="/js/jquery-3.0.0.min.js"></script>
     <script src="/js/angular.min.js"></script>
     <script src="/js/angular-touch.min.js"></script>
     <script src="/js/angular-animate.min.js"></script>

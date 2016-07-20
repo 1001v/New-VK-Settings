@@ -9,6 +9,17 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
       animation: true,
       templateUrl: '/html/helloModal.html'
     });
+  } else if (localStorage['feedback'] === undefined) {
+    localStorage['feedback'] = false;
+    $scope.active = 3;
+    $scope.feedbackModal = $uibModal.open({
+      animation: true,
+      templateUrl: '/html/feedbackModal.html'
+    });
+  }
+
+  $scope.stopNotify = function() {
+    localStorage['neverNotify'] = true;
   }
 
   $rootScope.close = function() {
@@ -18,6 +29,8 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
       $scope.resetModal.close();
     if ($scope.applyModal !== undefined)
       $scope.applyModal.close();
+    if ($scope.feedbackModal !== undefined)
+      $scope.feedbackModal.close();
   }
 
 
@@ -34,7 +47,8 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
       oldFonts: false,
       highContrast: false,
       oldAudioSize: false,
-      returnDurov: false
+      returnDurov: false,
+      menuNotif: false
     };
   }
 

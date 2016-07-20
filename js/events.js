@@ -1,4 +1,4 @@
-if (localStorage['settings'] === undefined) {
+if (localStorage['settings'] === undefined || localStorage['feedback'] === undefined) {
   chrome.tabs.create({
       url: "/html/settings.html"
   });
