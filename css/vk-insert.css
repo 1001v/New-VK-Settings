@@ -25,6 +25,7 @@ html.sqrAvatars .like_tt_image,
 html.sqrAvatars .ow_ava.ow_ava_comm,
 html.sqrAvatars .feedback_img,
 html.sqrAvatars .notifier_image,
+html.sqrAvatars .post_field_user_image,
 html.sqrAvatars .nim-peer .nim-peer--photo>img,
 html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img,
 html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img {
