@@ -13,18 +13,22 @@ function fillChanges() {
         }
         document.getElementById("resp").innerHTML = html;
     } else {
-        document.getElementById("version").innerHTML = "Список изменений недоступен";
+        document.getElementById("resp").innerHTML = "Список изменений недоступен";
     }
 }
 chrome.browserAction.setBadgeText({text: ""});
 document.getElementById("version").innerText = "v" + chrome.runtime.getManifest().version;
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://1001v.ru/vk/changes.json", true);
-xhr.onreadystatechange = function() {
-  if (xhr.readyState == 4 && xhr.status === 200) {
-    localStorage['changes'] = xhr.responseText;
-  }
-  fillChanges();
-  
-}
-xhr.send();
+
+$.ajax({
+    url: 'https://1001v.ru/vk/changes.json',
+    dataType: 'JSONP',
+    jsonpCallback: 'callback',
+    type: 'GET',
+    statusCode: {
+        200: function(data) {
+            localStorage["changes"] = JSON.stringify(data);
+        }
+    }
+}).always(function() {
+    fillChanges();
+});
