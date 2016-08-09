@@ -2,7 +2,32 @@
 <html>
   <head>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <meta charset="UTF-8"/>
+    <style>
+        body {
+            padding: 20px 20px 20px 20px;
+            width: 250px;
+        }
+        button {
+            margin-bottom: 5px !important;
+        }
+        button a {
+            color: white !important;
+        }
+        h4 {
+            margin-bottom: 30px;
+        }
+    </style>
   </head>
-  <button class="btn btn-default"><a target="_blank" href="/html/settings.html">Настройки</a></button>
+  <body>
+    <div id="message"></div>
+    <h4>Последние изменения <span class="label label-success" id="version"></span></h4>
+    <div id="resp"></div>
+    <div class="btn-group-vertical center-block">
+        <button class="btn btn-success"><a target="_blank" href="/html/settings.html"><i class="glyphicon glyphicon-cog"></i> Настройки расширения</a></button>
+        <button class="btn btn-success"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSerKdH3TEDi2QzhV_-pVSenPq0Wm_GCmXajh-tKKJ6wbCyExg/viewform"><i class="glyphicon glyphicon-thumbs-up"></i> Оценить расширение</a></button>
+        <button class="btn btn-success"><a target="_blank" href="http://games.gameru.net/"><i class="glyphicon glyphicon-tasks"></i> Другие проекты</a></button>
+    </div>
+    <script type="text/javascript" src="/js/popup.js"></script>
   </body>
 </html>

@@ -48,7 +48,10 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
       highContrast: false,
       oldAudioSize: false,
       returnDurov: false,
-      menuNotif: false
+      menuNotif: false,
+      menuUpd: false,
+      menuComm: false,
+      hidePossibleFriends: false
     };
   }
 

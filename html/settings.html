@@ -64,6 +64,11 @@
                 <p>Контраст сайта будет приближен в старой версии (лучший эффект достигается совместно с использованием белого фона)</p>
               </li>
               <li class="list-group-item list-settings">
+                <h4>Скрыть "Возможных друзей"</h4>
+                <button ng-model="settings.hidePossibleFriends" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.hidePossibleFriends}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>Блок "Возможные друзья" будет скрыт на всех страницах сайта.</p>
+              </li>
+              <li class="list-group-item list-settings">
                 <h4>Вернуть Дурова</h4>
                 <button ng-model="settings.returnDurov" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.returnDurov}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>Ссылка на Павла Дурова будет возвращена внизу страницы</p>
@@ -97,6 +102,16 @@
                 <h4>Кнопка уведомлений</h4>
                 <button ng-model="settings.menuNotif" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.menuNotif}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>В меню сайта появится кнопка со ссылкой на уведомления.</p>
+              </li>
+              <li class="list-group-item list-settings">
+                <h4>Кнопка комментариев</h4>
+                <button ng-model="settings.menuComm" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.menuComm}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>В меню сайта появится кнопка со ссылкой на комментарии.</p>
+              </li>
+              <li class="list-group-item list-settings">
+                <h4>Кнопка обновлений</h4>
+                <button ng-model="settings.menuUpd" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.menuUpd}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>В меню сайта появится кнопка со ссылкой на обновления.</p>
               </li>
             </ul>
           </uib-tab>

@@ -29,14 +29,15 @@ html.sqrAvatars .post_field_user_image,
 html.sqrAvatars .fans_idolph_wrap,
 html.sqrAvatars .fans_fan_img,
 html.sqrAvatars .group_box_image_link,
+html.sqrAvatars .like_share_ava.wdd_imgs,
+html.sqrAvatars .settings_bl_photo,
 html.sqrAvatars .nim-peer .nim-peer--photo>img,
+html.sqrAvatars img,
+html.sqrAvatars .wddi_img,
+html.sqrAvatars .text.ts_input,
 html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img,
 html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img {
-  border-radius: 0px;
-}
-
-html.sqrAvatars .text.ts_input{
-  border-radius: 0px;
+  border-radius: 0px !important;
 }
 
 
@@ -183,10 +184,14 @@ html.oldAudioSize .audio_row_playing .audio_play {
 
 /* Высокий контраст */
 
-html.highContrast .module_header .header_top {
+html.highContrast .module_header {
   line-height: 30px;
-  color: #45688E;
+  color: #45688E !important;
   background: #DEE5EB;
+}
+
+html.highContrast .module_header .header_label {
+    color: #45688E !important;
 }
 
 html.highContrast .module_header .header_top .right_link {
@@ -237,4 +242,8 @@ html.highContrast .wall_module > .page_block {
 html.highContrast .wall_module > .page_block a {
   color: #45688E;
   border-bottom: none;
+}
+
+html.hidePossibleFriends .friends_possible_block {
+    display: none;
 }
