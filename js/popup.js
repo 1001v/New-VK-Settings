@@ -1,6 +1,6 @@
 function fillChanges() {
-    if (localStorage['changes'] !== undefined) {
-        data = JSON.parse(localStorage['changes']);
+    if (typeof localStorage['changes_jsonp_'] !== 'undefined') {
+        data = JSON.parse(localStorage['changes_jsonp_']);
         var html = "";
         if (data.changes.length) {
             html += "<h5>Изменено:</h5>\n<ul class=\"list-group\"><li class=\"list-group-item\">" + data.changes.join("</li><li class=\"list-group-item\">") + "</li></ul>";
@@ -26,9 +26,10 @@ $.ajax({
     type: 'GET',
     statusCode: {
         200: function(data) {
-            localStorage["changes"] = JSON.stringify(data);
+            localStorage["changes_jsonp_"] = JSON.stringify(data);
         }
+    },
+    complete: function() {
+        fillChanges();
     }
-}).always(function() {
-    fillChanges();
 });
