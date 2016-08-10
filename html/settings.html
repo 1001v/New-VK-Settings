@@ -69,6 +69,11 @@
                 <p>Блок "Возможные друзья" будет скрыт на всех страницах сайта.</p>
               </li>
               <li class="list-group-item list-settings">
+                <h4>"Мне нравится" справа</h4>
+                <button ng-model="settings.moveLikeRight" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.moveLikeRight}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>Кнопки "Мне нравится" и "Поделиться" в записях будут находиться справа, а кнопка "Комментировать" слева.</p>
+              </li>
+              <li class="list-group-item list-settings">
                 <h4>Вернуть Дурова</h4>
                 <button ng-model="settings.returnDurov" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.returnDurov}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>Ссылка на Павла Дурова будет возвращена внизу страницы</p>

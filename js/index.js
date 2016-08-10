@@ -52,7 +52,8 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
       menuNotif: false,
       menuUpd: false,
       menuComm: false,
-      hidePossibleFriends: false
+      hidePossibleFriends: false,
+      moveLikeRight: false
     };
   }
 

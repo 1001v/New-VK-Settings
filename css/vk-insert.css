@@ -251,3 +251,11 @@ html.hidePossibleFriends .friends_possible_block {
 html.fixNarrowColumn #narrow_column.position_right {
     position: absolute !important;
 }
+
+html.moveLikeRight .post_full_like_wrap .reply_link_wrap { 
+    float: left; 
+}
+
+html.moveLikeRight .post_full_like_wrap .post_like, html.moveLikeRight .post_full_like_wrap .post_share { 
+    float: right; 
+}
