@@ -40,6 +40,7 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
   function getDefaultSettings() {
     return {
       fixMenu: false,
+      fixNarrowColumn: false,
       sqrAvatars: false,
       noBackground: false,
       hideRightBlock: false,

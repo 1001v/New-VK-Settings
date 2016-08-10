@@ -3,10 +3,10 @@ function fillChanges() {
         data = JSON.parse(localStorage['changes_jsonp_']);
         var html = "";
         if (data.changes.length) {
-            html += "<h5>Изменено:</h5>\n<ul class=\"list-group\"><li class=\"list-group-item\">" + data.changes.join("</li><li class=\"list-group-item\">") + "</li></ul>";
+            html += "<h5>Изменено:</h5>\n<ul class=\"list-group\"><li class=\"list-group-item\"><i class=\"glyphicon glyphicon-ok\"></i> " + data.changes.join("</li><li class=\"list-group-item\"><i class=\"glyphicon glyphicon-ok\"></i> ") + "</li></ul>";
         }
         if (data.features.length) {
-            html += "<h5>Добавлено:</h5>\n<ul class=\"list-group\"><li class=\"list-group-item\">" + data.features.join("</li><li class=\"list-group-item\">") + "</li></ul>";
+            html += "<h5>Добавлено:</h5>\n<ul class=\"list-group\"><li class=\"list-group-item\"><i class=\"glyphicon glyphicon-plus\"></i> " + data.features.join("</li><li class=\"list-group-item\"><i class=\"glyphicon glyphicon-plus\"></i> ") + "</li></ul>";
         }
         if (data.message) {
             document.getElementById("message").innerHTML = data.message;

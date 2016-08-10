@@ -99,6 +99,11 @@
                 <p>Меню сайта будет зафиксировано</p>
               </li>
               <li class="list-group-item list-settings">
+                <h4>Расфиксировать правую колонку в новостях</h4>
+                <button ng-model="settings.fixNarrowColumn" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.fixNarrowColumn}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>Правая колонка на странице новостей будет уезжать наверх при скролле.</p>
+              </li>
+              <li class="list-group-item list-settings">
                 <h4>Кнопка уведомлений</h4>
                 <button ng-model="settings.menuNotif" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.menuNotif}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>В меню сайта появится кнопка со ссылкой на уведомления.</p>

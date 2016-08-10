@@ -16,6 +16,16 @@ var functions = {
   },
   "menuUpd": function() {
     jQuery("#side_bar .side_bar_inner ol").append("<li><a href=\"/feed?section=updates\" onclick=\"return nav.go(this, event, {noback: true, params: {_ref: 'left_nav'}});\" class=\"left_row\"><span class=\"left_fixer\"><span class=\"left_count_wrap fl_r left_void\"><span class=\"inl_bl left_count_sign\"></span></span><span class=\"left_icon fl_l\"></span><span class=\"left_label inl_bl\">" + (jQuery("#l_pr .left_label.inl_bl").text() == "My Profile" ? "Updates" : "Обновления") + "</span></span></a><div class=\"left_settings\" onclick=\"menuSettings(0)\"><div class=\"left_settings_inner\"></div></div></li>");
+  },
+  "fixNarrowColumn": function() {
+      if (window.location.href.indexOf("/feed") !== -1) {
+        jQuery("#narrow_column:has(#feed_rmenu)").addClass("position_right");
+      }
+      $("html head title").bind("DOMSubtreeModified", function() {
+        if (window.location.href.indexOf("/feed") !== -1) {
+            jQuery("#narrow_column:has(#feed_rmenu)").addClass("position_right");
+        }
+      });
   }
 }
 

@@ -6,29 +6,46 @@
     <style>
         body {
             padding: 20px 20px 20px 20px;
-            width: 250px;
-        }
-        button {
-            margin-bottom: 5px !important;
-        }
-        button a {
-            color: white !important;
+            width: 600px;
         }
         h4 {
-            margin-bottom: 30px;
+            margin-bottom: 2px;
+        }
+        #resp {
+            margin-top: 30px;
+        }
+        .col-md-8 {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        img {
+            width: 64px;
+        }
+        .glyphicon {
+            padding-right: 5px;
         }
     </style>
   </head>
   <body>
-    <div id="message"></div>
-    <h4>Последние изменения <span class="label label-success" id="version"></span></h4>
-    <div id="resp"></div>
-    <div class="btn-group-vertical center-block">
-        <button class="btn btn-success"><a target="_blank" href="/html/settings.html"><i class="glyphicon glyphicon-cog"></i> Настройки расширения</a></button>
-        <button class="btn btn-success"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSerKdH3TEDi2QzhV_-pVSenPq0Wm_GCmXajh-tKKJ6wbCyExg/viewform"><i class="glyphicon glyphicon-thumbs-up"></i> Оценить расширение</a></button>
-        <button class="btn btn-success"><a target="_blank" href="http://games.gameru.net/"><i class="glyphicon glyphicon-tasks"></i> Другие проекты</a></button>
-    </div>
-    <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="/js/popup.js"></script>
+      <h1>New <img src="/icons/128.png"> Settings</h1>
+      <div class="row">
+          <div class="col-md-4">
+              <div id="message"></div>
+              <h4>Недавние обновления</h4>
+              <span class="label label-success" id="version"></span>
+              <div id="resp"></div>
+          </div>
+          <div class="col-md-8">
+              <div class="btn-group">
+                  <a class="btn btn-success" target="_blank" href="/html/settings.html"><i class="glyphicon glyphicon-cog"></i> Настройки расширения</a>
+                  <a class="btn btn-success" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSerKdH3TEDi2QzhV_-pVSenPq0Wm_GCmXajh-tKKJ6wbCyExg/viewform"><i class="glyphicon glyphicon-thumbs-up"></i> Оценить расширение</a>
+                  <a class="btn btn-success" target="_blank" href="http://games.gameru.net/"><i class="glyphicon glyphicon-tasks"></i> Другие проекты</a>
+              </div>
+          </div>
+      </div>
+      <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+      <script type="text/javascript" src="/js/popup.js"></script>
   </body>
 </html>

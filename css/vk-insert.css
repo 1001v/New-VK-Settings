@@ -247,3 +247,7 @@ html.highContrast .wall_module > .page_block a {
 html.hidePossibleFriends .friends_possible_block {
     display: none;
 }
+
+html.fixNarrowColumn #narrow_column.position_right {
+    position: absolute !important;
+}
