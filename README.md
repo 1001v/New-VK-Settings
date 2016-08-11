@@ -15,11 +15,16 @@
 * Opera
 * Firefox (с версии 48)
 
+# Установка
+
+## Для пользователей Chrome и Яндекс Браузер
+Перейдите в [интернет-магазин Chrome] (https://chrome.google.com/webstore/detail/new-vk-settings/ekpjgpjkepibbmlobolhofkagodfjnam?hl=ru) и установите расширение.
+
 ## Для пользователей Opera
-Для установки расширения из Google Store необходимо установить расширение [Download Chrome Extension] (https://addons.opera.com/ru/extensions/details/download-chrome-extension-9/?display=en).
+Для установки расширения из Google Store необходимо установить расширение [Download Chrome Extension] (https://addons.opera.com/ru/extensions/details/download-chrome-extension-9/?display=en). Далее выполните установку как для Chrome.
 
 ## Для пользователей Firefox
-Требуется версия браузера не ниже чем 48. Для установки расширения из Google Store необходимо установить расширение [Chrome Store Foxified] (https://addons.mozilla.org/ru/firefox/addon/chrome-store-foxified/). 
+Требуется версия браузера не ниже чем 48. Для установки расширения из Google Store необходимо установить расширение [Chrome Store Foxified] (https://addons.mozilla.org/ru/firefox/addon/chrome-store-foxified/). Вы также должны быть залогинены в [Addons Mozilla] (https://addons.mozilla.org/en-US/firefox/users/login). Далее выполните установку как для Chrome.
 
 ## Ссылки
 
