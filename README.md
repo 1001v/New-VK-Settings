@@ -30,7 +30,7 @@
 
 * [Интернет-магазин Chrome] (https://chrome.google.com/webstore/detail/new-vk-settings/ekpjgpjkepibbmlobolhofkagodfjnam?hl=ru)
 
-## Установка из данного репозитория
+## Установка из данного репозитория для chromium-based браузеров
 Для установки расширения в браузер без участия Google Store сделайте следующее:
 * Выполните git clone данного репозитория в любую папку, либо скачайте и распакуйте zip
 * Введите в строку адреса **chrome://extensions**
