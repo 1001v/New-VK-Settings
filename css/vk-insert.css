@@ -244,14 +244,31 @@ html.highContrast .wall_module > .page_block a {
   border-bottom: none;
 }
 
+
+/* Скрыть возможных друзей */
 html.hidePossibleFriends .friends_possible_block {
     display: none;
 }
+
+/* Расфиксировать правую колонку в новостях */
 
 html.fixNarrowColumn #narrow_column.position_right {
     position: absolute !important;
 }
 
+/*
+html.fixNarrowColumn div#content > div.wide_column_left .narrow_column { 
+    width: 230px; 
+    position: absolute !important; 
+}
+
+html.fixNarrowColumn div#content > div.wide_column_left .narrow_column_wrap { 
+    float: right; 
+    position: absolute !important; 
+    right: 0; 
+}
+*/
+/* Лайки справа */
 html.moveLikeRight .post_full_like_wrap .reply_link_wrap { 
     float: left; 
 }
