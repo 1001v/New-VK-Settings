@@ -88,6 +88,11 @@
                 <button ng-model="settings.returnDurov" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.returnDurov}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>Ссылка на Павла Дурова будет возвращена внизу страницы</p>
               </li>
+              <li class="list-group-item list-settings">
+                <h4>Старый логотип</h4>
+                <button ng-model="settings.oldLogo" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.oldLogo}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>Логотип сайта будет заменен на старую надпись вконтакте</p>
+              </li>
               <li class="list-group-item disabled list-settings">
                 <h4>Вернуть стену <span class="label label-warning">VIP</span> <span class="label label-pill label-default">В разработке</span></h4>
                 <button class="btn btn-default disabled btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
@@ -141,6 +146,7 @@
               <ul>
                 <li><b>Rocotos</b> за инвестиции для публикации расширения в магазине Google</li>
                 <li><b>Олегу Бойко</b> за соучастие в разработке</li>
+                <li><b>Darkstalker98</b> за подготовку старого логотипа</li>
               </ul>
             </div>
           </uib-tab>
@@ -163,11 +169,11 @@
       </div>
       <div class="col-xs-1 right"></div>
     </div>
-    <button title="Применить все настройки" ng-click="openApplyModal()" class="btn btn-success btn-apply pull-right box-shadow--2dp"><span class="glyphicon glyphicon-ok"></span></button>
+    <button title="Применить все настройки" ng-click="openApplyModal()" class="btn btn-success btn-apply pull-right box-shadow--2dp"><span class="glyphicon glyphicon-th-list"></span></button>
     <button title="Сбросить все настройки" ng-click="openResetModal()" class="btn btn-danger btn-reset pull-right box-shadow--2dp"><span class="glyphicon glyphicon-trash"></span></button>
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">{{manifest.browser_action.default_title}} {{manifest.version}} beta © 1001v</p>
+        <p class="text-muted">{{manifest.browser_action.default_title}} {{manifest.version}} © 1001v</p>
       </div>
     </footer>
     <script src="/js/angular.min.js"></script>

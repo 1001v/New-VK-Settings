@@ -6,7 +6,7 @@ var functions = {
   },
   "returnDurov": function() {
     //console.log(jQuery("#bottom_nav .footer_copy.fl_l"));
-    jQuery("#bottom_nav .footer_copy.fl_l").html(jQuery("#bottom_nav .footer_copy.fl_l").text() + " <a href='/durov'>Павел Дуров</a>");
+    jQuery(".left_menu_nav_wrap").prepend("<a class='left_menu_nav' href='/durov'>Павел Дуров</a>");
   },
   "menuNotif": function() {
     jQuery("#side_bar .side_bar_inner ol").append("<li><a href=\"/feed?section=notifications\" onclick=\"return nav.go(this, event, {noback: true, params: {_ref: 'left_nav'}});\" class=\"left_row\"><span class=\"left_fixer\"><span class=\"left_count_wrap fl_r left_void\"><span class=\"inl_bl left_count_sign\"></span></span><span class=\"left_icon fl_l\"></span><span class=\"left_label inl_bl\">" + (jQuery("#l_pr .left_label.inl_bl").text() == "My Profile" ? "Notifications" : "Уведомления") + "</span></span></a><div class=\"left_settings\" onclick=\"menuSettings(0)\"><div class=\"left_settings_inner\"></div></div></li>");

@@ -55,7 +55,8 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
       hidePossibleFriends: false,
       hidePossibleGroups: false,
       hideUnderMenu: false,
-      moveLikeRight: false
+      moveLikeRight: false,
+      oldLogo: false
     };
   }
 
@@ -63,7 +64,7 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
     $scope.$watchCollection("settings", function() {
       if (! initializing) {
         $scope.changes = true;
-        toastr.info('Требуется перезагрузить vk.com', 'Настройки применены');
+        toastr.info('Требуется перезагрузить vk.com', 'Настройка включена');
         console.log("Настройка изменена.");
         $scope.writeSettings();
       } else
@@ -110,7 +111,7 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
     for (setting in $scope.settings)
       $scope.settings[setting] = true;
     $scope.close();
-    toastr.success('Требуется перезагрузить vk.com', 'Настройки применены');
+    toastr.success('Требуется перезагрузить vk.com', 'Настройки включены');
     $scope.writeSettings();
   }
 
