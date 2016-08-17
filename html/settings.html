@@ -69,6 +69,16 @@
                 <p>Блок "Возможные друзья" будет скрыт на всех страницах сайта.</p>
               </li>
               <li class="list-group-item list-settings">
+                <h4>Скрыть "Рекомендуемые сообщества"</h4>
+                <button ng-model="settings.hidePossibleGroups" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.hidePossibleGroups}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>Блок "Рекомендуемые сообщества" будет скрыт на всех страницах сайта.</p>
+              </li>
+              <li class="list-group-item list-settings">
+                <h4>Скрыть ссылки под меню</h4>
+                <button ng-model="settings.hideUnderMenu" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.hideUnderMenu}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
+                <p>Блок под меню со ссылками на блог, рекламу и другими будет скрыт.</p>
+              </li>
+              <li class="list-group-item list-settings">
                 <h4>"Мне нравится" справа</h4>
                 <button ng-model="settings.moveLikeRight" uib-btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-class="{active: settings.moveLikeRight}" class="btn btn-default btn-sm vk-checkbox pull-right"><i class="glyphicon glyphicon-ok"></i></button>
                 <p>Кнопки "Мне нравится" и "Поделиться" в записях будут находиться справа, а кнопка "Комментировать" слева.</p>
@@ -153,7 +163,7 @@
       </div>
       <div class="col-xs-1 right"></div>
     </div>
-      <button title="Применить все настройки" ng-click="openApplyModal()" class="btn btn-success btn-apply pull-right box-shadow--2dp"><span class="glyphicon glyphicon-ok"></span></button>
+    <button title="Применить все настройки" ng-click="openApplyModal()" class="btn btn-success btn-apply pull-right box-shadow--2dp"><span class="glyphicon glyphicon-ok"></span></button>
     <button title="Сбросить все настройки" ng-click="openResetModal()" class="btn btn-danger btn-reset pull-right box-shadow--2dp"><span class="glyphicon glyphicon-trash"></span></button>
     <footer class="footer">
       <div class="container">

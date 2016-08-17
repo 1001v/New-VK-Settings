@@ -250,6 +250,16 @@ html.hidePossibleFriends .friends_possible_block {
     display: none;
 }
 
+/* Скрыть рекомендованные сообщества */
+html.hidePossibleGroups #groups_filters_wrap {
+    display: none;
+}
+
+/* Скрыть ссылки под меню */
+html.hideUnderMenu .left_menu_nav_wrap {
+    display: none;
+}
+
 /* Расфиксировать правую колонку в новостях */
 
 html.fixNarrowColumn #narrow_column.position_right {
