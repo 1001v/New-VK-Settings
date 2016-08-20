@@ -40,23 +40,30 @@ angular.module("vk-settings", ["ui.bootstrap", "ngAnimate", "toastr"])
   function getDefaultSettings() {
     return {
       fixMenu: false,
+      myMenu: true,
+      editMenu: true,
+      oldHead: true,
+      oldPhoto: true,
       fixNarrowColumn: false,
-      sqrAvatars: false,
-      noBackground: false,
+      sqrAvatars: true,
+      noBackground: true,
       hideRightBlock: false,
-      oldMessageBackground: false,
-      oldFonts: false,
-      highContrast: false,
-      oldAudioSize: false,
-      returnDurov: false,
+      oldMessageBackground: true,
+      oldFonts: true,
+      highContrast: true,
+      sizeOptimize: false,
+      oldAudioSize: true,
+      returnDurov: true,
       menuNotif: false,
       menuUpd: false,
-      menuComm: false,
+      menuComm: true,
+      menuSett: false,
+      hideAdds: false,
       hidePossibleFriends: false,
       hidePossibleGroups: false,
       hideUnderMenu: false,
-      moveLikeRight: false,
-      oldLogo: false
+      moveLikeRight: true,
+      oldLogo: true
     };
   }
 

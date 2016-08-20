@@ -6,7 +6,7 @@
     <style>
         body {
             padding: 20px 20px 20px 20px;
-            width: 600px;
+            width: 800px;
         }
         h4 {
             margin-bottom: 2px;
@@ -26,6 +26,9 @@
         .glyphicon {
             padding-right: 5px;
         }
+        #message {
+            margin: 10px 10px 30px 10px;
+        }
     </style>
   </head>
   <body>
@@ -33,15 +36,16 @@
       <div class="row">
           <div class="col-md-8">
               <div class="btn-group">
-                  <a class="btn btn-success" target="_blank" href="/html/settings.html"><i class="glyphicon glyphicon-cog"></i> Настройки расширения</a>
-                  <a class="btn btn-success" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSerKdH3TEDi2QzhV_-pVSenPq0Wm_GCmXajh-tKKJ6wbCyExg/viewform"><i class="glyphicon glyphicon-thumbs-up"></i> Оценить расширение</a>
-                  <a class="btn btn-success" target="_blank" href="http://games.gameru.net/"><i class="glyphicon glyphicon-tasks"></i> Другие проекты</a>
+                  <a class="btn btn-sm btn-success" target="_blank" href="/html/settings.html"><i class="glyphicon glyphicon-cog"></i> Настройки расширения</a>
+                  <a class="btn btn-sm btn-success" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSerKdH3TEDi2QzhV_-pVSenPq0Wm_GCmXajh-tKKJ6wbCyExg/viewform"><i class="glyphicon glyphicon-thumbs-up"></i> Оценить расширение</a>
+                  <a class="btn btn-sm btn-success" target="_blank" href="http://games.gameru.net/"><i class="glyphicon glyphicon-tasks"></i> Другие проекты</a>
+                  <a class="btn btn-sm btn-success" target="_blank" href="https://vk.com/newvksettings"><i class="glyphicon glyphicon-user"></i> Группа в VK</a>
               </div>
           </div>
           <div class="col-md-4">
-              <div id="message"></div>
               <h4>Недавние обновления</h4>
               <span class="label label-success" id="version"></span>
+              <p class="label label-warning" id="message"></p>
               <div id="resp"></div>
           </div>
       </div>

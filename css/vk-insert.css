@@ -35,10 +35,12 @@ html.sqrAvatars .nim-peer .nim-peer--photo>img,
 html.sqrAvatars img,
 html.sqrAvatars .wddi_img,
 html.sqrAvatars .text.ts_input,
+html.sqrAvatars .friends_photo_wrap .ui_zoom_inner,
 html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img,
 html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img {
   border-radius: 0px !important;
 }
+
 
 
 /* Белый фон */
@@ -132,7 +134,10 @@ html.oldMessageBackground .im-page--header.ui_search._im_dialogs_search {
 
 #side_bar_inner_fixed {
   margin-top: 0px !important;
-  top: 46px;
+  top: 43px;
+  z-index: 10;
+  width: 149px;
+  padding: 15px 0 10px;
 }
 
 
@@ -151,6 +156,10 @@ html.oldAudioSize .audio_page_player .audio_page_player_play .icon {
   background-position: -3px -3px;
   width: 22px;
   height: 22px;
+}
+
+html.oldAudioSize .audio_performer {
+    font-weight: 600;
 }
 
 html.oldAudioSize .audio_page_player_ctrl.audio_page_player_play._audio_page_player_play {
@@ -245,6 +254,18 @@ html.highContrast .wall_module > .page_block a {
 }
 
 
+html.highContrast .nim-dialog.nim-dialog_classic {
+    border-top: solid 1px #e7e8ec;
+}
+html.highContrast .nim-dialog .nim-dialog--content {
+    border-color: #fff;
+}
+
+html.highContrast .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_classic.nim-dialog_unread:before, .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_hovered:before, .nim-dialog:not(.nim-dialog_deleted).nim-dialog:hover:before, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered+.im-page--messages-search:before, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered+.nim-dialog:before, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected+.im-page--messages-search:before, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected+.nim-dialog:before, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic+.im-page--messages-search:before, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic+.nim-dialog:before, .nim-dialog:not(.nim-dialog_deleted):hover+.im-page--messages-search:before, .nim-dialog:not(.nim-dialog_deleted):hover+.nim-dialog:before, .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_classic.nim-dialog_unread .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_classic.nim-dialog_unread .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_hovered .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_hovered .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted).nim-dialog:hover .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted).nim-dialog:hover .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered+.im-page--messages-search .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered+.im-page--messages-search .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered+.nim-dialog .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered+.nim-dialog .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected+.im-page--messages-search .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected+.im-page--messages-search .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected+.nim-dialog .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected+.nim-dialog .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic+.im-page--messages-search .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic+.im-page--messages-search .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic+.nim-dialog .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic+.nim-dialog .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted):hover+.im-page--messages-search .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted):hover+.im-page--messages-search .nim-dialog--photo, .nim-dialog:not(.nim-dialog_deleted):hover+.nim-dialog .nim-dialog--content, .nim-dialog:not(.nim-dialog_deleted):hover+.nim-dialog .nim-dialog--photo{
+    margin-top: 0px !important;
+}
+
+
 /* Скрыть возможных друзей */
 html.hidePossibleFriends .friends_possible_block {
     display: none;
@@ -297,4 +318,171 @@ html.oldLogo .top_home_logo {
     height: 100% !important; 
     background-size: 155px auto !important; 
     margin: 3px -0px 0px -15px !important;
+}
+
+/* Убрать иконки */
+
+
+html.myMenu .left_icon { display: none !important; }
+html.myMenu #side_bar .left_label{ padding-left: 7px; }
+html.myMenu .left_settings{ margin: -25px 0 0 -22px; }
+html.myMenu #side_bar .more_div { margin-left: 0;}
+
+/* Скрыть рекламу */
+
+
+html.hideAdds #ads_left { display: none !important; }
+
+
+html.editMenu #side_bar .left_label {
+    position: relative;
+}
+
+html.editMenu a.f_red_p { 
+    position: absolute; 
+    right: 20px; 
+    top: 0px; 
+}
+
+html.editMenu:not(.myMenu).sizeOptimize a.f_red_p {
+    right: -3px;
+}
+html.editMenu:not(.myMenu).sizeOptimize #side_bar .left_icon {
+    width: 28px;
+}
+html.editMenu:not(.myMenu):not(.sizeOptimize) a.f_red_p {
+    right: -3px;
+}
+
+
+html.editMenu.myMenu:not(.sizeOptimize) a.f_red_p {
+    right: 20px;
+}
+
+html.editMenu #side_bar .left_label { 
+    position: relative; 
+}
+
+html.editMenu a.f_red_p {
+    color: #777;
+}
+
+html.editMenu a.f_red_p:hover {
+    color: inherit;
+}
+
+
+/* Оптимизация размеров */
+
+html.sizeOptimize #page_layout {
+    width: 980px !important;
+}
+html.sizeOptimize #page_body {
+    width: 840px !important; 
+}
+
+html.sizeOptimize .nim-dialog.nim-dialog_classic .nim-dialog--name, .nim-dialog.nim-dialog_classic .nim-dialog--preview, .nim-dialog.nim-dialog_classic .nim-dialog--text-preview{
+    font-size: 11px;
+}
+html.sizeOptimize .nim-dialog .nim-dialog--name{
+    margin-top: 10px;
+}
+
+
+html.sizeOptimize .ui_rmenu_item, .ui_rmenu_subitem{
+    height: 25px;
+    line-height: 26px;
+}
+
+html.sizeOptimize #page_body{
+    font-size: 11px;
+}
+html.sizeOptimize .im-page .im-page--chat-body-wrap{
+    font-size: 12px;
+}
+
+html.sizeOptimize #side_bar ol li .left_row .left_count_wrap, html.sizeOptimize #side_bar ol li .left_row:hover .left_count_wrap {
+    margin: 0px 15px 0px 0px !important;
+    line-height: 14px; 
+    height: 14px; 
+    padding: 4px 6px !important; 
+    background: #e1e5eb 
+}
+
+html.sizeOptimize #side_bar .left_label { 
+    line-height: 22px; 
+    height: 22px; 
+    padding-left: 0x; 
+    font-size: 11px; 
+}
+
+html.sizeOptimize .side_bar_inner { 
+    width: 120px; 
+}
+html.sizeOptimize #side_bar .left_icon{
+	height: 22px;
+	margin-top: -2px;
+}
+html.sizeOptimize #side_bar ol li{ margin-bottom: 1px;}
+
+
+
+/* Старая шапка */
+
+
+html.oldHead #page_header{
+   background: #507299;
+    border-radius: 0px 0px 7px 7px;
+    -webkit-border-radius: 0px 0px 7px 7px;
+    border-bottom: 1px solid #466991;
+}
+html.oldHead #page_header_cont .back {
+    background: #fff;
+    border-bottom: none;
+
+}
+html.oldHead.oldLogo .top_home_logo{
+    width: 125px !important;
+    background-size: 100% !important;
+    margin-left: -5px !important;
+    margin-top: 5px !important;
+
+}
+
+html.oldHead #page_header_cont .back{
+    background: rgba(0,0,0,0);
+}
+
+
+html.oldPhoto .pv_cont .pv_left_wrap{
+    float: none !important;
+    display: block !important;
+}
+html.oldPhoto .pv_cont .pv_narrow_column_wrap{
+    display: block !important;
+    float: none !important;
+}
+html.oldPhoto #layer, .pv_light #layer{ 
+    margin-top:10px !important;
+}
+html.oldPhoto #pv_photo{
+    width: 100% !important;
+    height: auto !important;
+       
+}
+html.oldPhoto #pv_narrow{
+    width: 100% !important;
+    height: auto !important;
+}
+html.oldPhoto .pv_cont .pv_reply_form_wrap{
+    width: 100% !important;
+}
+html.oldPhoto .pv_cont{
+    width:100% !important;
+    max-width: 980px !important;
+ }
+
+html.oldPhoto #pv_photo img { 
+    max-width: 100% !important; 
+    height: auto !important; 
 }
