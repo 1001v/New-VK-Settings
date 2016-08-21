@@ -135,7 +135,6 @@ html.oldMessageBackground .im-page--header.ui_search._im_dialogs_search {
 #side_bar_inner_fixed {
   margin-top: 0px !important;
   top: 43px;
-  z-index: 10;
   width: 149px;
   padding: 15px 0 10px;
 }
@@ -275,6 +274,14 @@ html.hidePossibleFriends .friends_possible_block {
 html.hidePossibleGroups #groups_filters_wrap {
     display: none;
 }
+
+html.hidePossibleGroups #feed_filters .page_block .right_list_header, html.hidePossibleGroups #group_recom_wrap {
+    display: none;
+}
+html.hidePossibleGroups #feed_filters .page_block:nth-child(2) {
+    display: none;
+}
+
 
 /* Скрыть ссылки под меню */
 html.hideUnderMenu .left_menu_nav_wrap {
