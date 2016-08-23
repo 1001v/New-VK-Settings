@@ -51,13 +51,13 @@ html.noBackground body {
 
 html.noBackground .wide_column_left .wide_column {
   float: left;
-  border-left: 1px solid #e6e7eb;
-  border-right: 1px solid #e6e7eb;
+  border-left: 1px solid #dfdfe1;
+  border-right: 1px solid #dfdfe1;
 }
 
 html.noBackground .feed_row .page_block, html.noBackground #page_wall_posts .page_block {
   margin: 15px 0px 0px;
-  border: 1px solid #e6e7eb;
+  border: 1px solid #dfdfe1;
   border-width: 0px 0px 1px 0px;
   box-shadow: none;
 }
@@ -135,7 +135,6 @@ html.oldMessageBackground .im-page--header.ui_search._im_dialogs_search {
 #side_bar_inner_fixed {
   margin-top: 0px !important;
   top: 43px;
-  width: 149px;
   padding: 15px 0 10px;
 }
 
@@ -389,7 +388,7 @@ html.sizeOptimize #page_body {
 }
 
 html.sizeOptimize .nim-dialog.nim-dialog_classic .nim-dialog--name, .nim-dialog.nim-dialog_classic .nim-dialog--preview, .nim-dialog.nim-dialog_classic .nim-dialog--text-preview{
-    font-size: 11px;
+    font-size: 12px;
 }
 html.sizeOptimize .nim-dialog .nim-dialog--name{
     margin-top: 10px;
@@ -398,11 +397,23 @@ html.sizeOptimize .nim-dialog .nim-dialog--name{
 
 html.sizeOptimize .ui_rmenu_item, .ui_rmenu_subitem{
     height: 25px;
-    line-height: 26px;
+    line-height: 24px;
+	font-size: 11px !important; 
 }
 
+html.sizeOptimize .ui_rmenu_item, html.sizeOptimize .ui_rmenu_subitem{
+	height: 26px;
+    line-height: 25px;
+}
+
+html.sizeOptimize .wall_post_text{
+	line-height: 1.5;
+	
+}
+
+
 html.sizeOptimize #page_body{
-    font-size: 11px;
+    font-size: 12px !important;
 }
 html.sizeOptimize .im-page .im-page--chat-body-wrap{
     font-size: 12px;
@@ -439,7 +450,7 @@ html.sizeOptimize #side_bar ol li{ margin-bottom: 1px;}
 
 html.oldHead #page_header{
    background: #507299;
-    border-radius: 0px 0px 7px 7px;
+    wie-radius: 0px 0px 7px 7px;
     -webkit-border-radius: 0px 0px 7px 7px;
     border-bottom: 1px solid #466991;
 }
@@ -492,4 +503,7 @@ html.oldPhoto .pv_cont{
 html.oldPhoto #pv_photo img { 
     max-width: 100% !important; 
     height: auto !important; 
+}
+html.oldPhoto .photos_container_albums .photos_album_thumb{
+	width:225px;
 }
