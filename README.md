@@ -26,6 +26,12 @@
 ## Для пользователей Firefox
 Требуется версия браузера не ниже чем 48. Для установки расширения из Google Store необходимо установить расширение [Chrome Store Foxified] (https://addons.mozilla.org/ru/firefox/addon/chrome-store-foxified/). Вы также должны быть залогинены в [Addons Mozilla] (https://addons.mozilla.org/en-US/firefox/users/login). Далее выполните установку как для Chrome.
 
+Внимание! Если вы испытываете проблему на этапе подписи расширения, попробуйте выполнить следующие шаги:
+* [Скачайте последнюю версию расширения в уже подписанном mozilla виде в формате xpi] (http://1001v.ru/vk/firefox/)
+* Откройте вкладку с аддонами через меню либо введите в адресную строку **about:addons**
+* Слева перейдите во вкладку расширения (extensions) и нажмите на шестеренку справа вверху
+* Выберите опцию "установить из файла" и указывайте скачанный файл xpi, согласитесь с предложением браузера установить расширение 
+
 ## Ссылки
 
 * [Интернет-магазин Chrome] (https://chrome.google.com/webstore/detail/new-vk-settings/ekpjgpjkepibbmlobolhofkagodfjnam?hl=ru)
