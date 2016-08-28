@@ -36,7 +36,13 @@ function unlockTopMenu() {
 
 var functions = {
     "oldHead": function () {
-
+        if (window.location.href.indexOf("/im") !== -1) {
+            // если в диалоге - возвращаем шапку и сдвинутые меню на место
+            resetOldHeadShifts();
+            jQuery('html').addClass('imFixedHead');
+        } else {
+          jQuery('html').removeClass('imFixedHead');
+        }
         $("html head title").bind("DOMSubtreeModified", function () {
             if (window.location.href.indexOf("/im") !== -1) {
                 // если в диалоге - возвращаем шапку и сдвинутые меню на место
