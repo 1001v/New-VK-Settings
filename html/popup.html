@@ -6,13 +6,13 @@
     <style>
         body {
             padding: 20px 20px 20px 20px;
-            width: 800px;
+            width: 750px;
         }
         h4 {
             margin-bottom: 2px;
         }
         #resp {
-            margin-top: 30px;
+            margin-top: 5px;
         }
         .col-md-8 {
             text-align: center;
@@ -27,7 +27,7 @@
             padding-right: 5px;
         }
         #message {
-            margin: 10px 10px 30px 10px;
+            margin: 5px 10px 10px 10px;
         }
     </style>
   </head>
@@ -40,13 +40,14 @@
                   <a class="btn btn-sm btn-success" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSerKdH3TEDi2QzhV_-pVSenPq0Wm_GCmXajh-tKKJ6wbCyExg/viewform"><i class="glyphicon glyphicon-thumbs-up"></i> Оценить расширение</a>
                   <a class="btn btn-sm btn-success" target="_blank" href="http://games.gameru.net/"><i class="glyphicon glyphicon-tasks"></i> Другие проекты</a>
                   <a class="btn btn-sm btn-danger" target="_blank" href="https://vk.com/newvksettings"><i class="glyphicon glyphicon-user"></i> Группа в VK</a>
+                  <a class="btn btn-sm btn-danger" target="_blank" href="https://vk.com/topic-127124407_35871178"><i class="glyphicon glyphicon-ruble"></i> Поддержать нас</a>
               </div>
           </div>
           <div class="col-md-4">
               <h4>Недавние обновления</h4>
               <span class="label label-success" id="version"></span>
-              <p class="label label-warning" id="message"></p>
-              <div id="resp"></div>
+              <p id="message"></p>
+              <div style="overflow-y: scroll; max-height: 300px;" id="resp"></div>
           </div>
       </div>
       <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>

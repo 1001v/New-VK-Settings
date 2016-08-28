@@ -38,7 +38,7 @@ html.sqrAvatars .text.ts_input,
 html.sqrAvatars .friends_photo_wrap .ui_zoom_inner,
 html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img,
 html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img {
-  border-radius: 0px !important;
+    border-radius: 0px !important;
 }
 
 
@@ -46,103 +46,103 @@ html.sqrAvatars .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim
 /* Белый фон */
 
 html.noBackground body {
-  background: none;
+    background: none;
 }
 
 html.noBackground .wide_column_left .wide_column {
-  float: left;
-  border-left: 1px solid #dfdfe1;
-  border-right: 1px solid #dfdfe1;
+    float: left;
+    border-left: 1px solid #dfdfe1;
+    border-right: 1px solid #dfdfe1;
 }
 
 html.noBackground .feed_row .page_block, html.noBackground #page_wall_posts .page_block {
-  margin: 15px 0px 0px;
-  border: 1px solid #dfdfe1;
-  border-width: 0px 0px 1px 0px;
-  box-shadow: none;
+    margin: 15px 0px 0px;
+    border: 1px solid #dfdfe1;
+    border-width: 0px 0px 1px 0px;
+    box-shadow: none;
 }
 
 
 
 /* Фон у непрочитанного сообщения вместо точки*/
 html.oldMessageBackground .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--unread {
-  bottom: 0px;
+    bottom: 0px;
 }
 
 html.oldMessageBackground .nim-dialog--name,
 html.oldMessageBackground .nim-dialog--text-preview {
-  z-index: 100;
-  position: relative;
+    z-index: 100;
+    position: relative;
 }
 
 html.oldMessageBackground .nim-dialog--close._im_dialog_close, html.oldMessageBackground .nim-dialog--date._im_dialog_date {
-  z-index: 101;
-  display: none;
+    z-index: 101;
+    display: none;
 }
 
 html.oldMessageBackground .nim-dialog--photo {
-  z-index: 101;
-  position: relative;
+    z-index: 101;
+    position: relative;
 }
 
-html.oldMessageBackground .nim-dialog .nim-dialog--preview {
-  color: #67829E;
+html.oldMessageBackground .nim-dialog .nim-dialog--preview, html.oldMessageBackground .nim-dialog:not(.nim-dialog_deleted):hover .nim-dialog--text-preview  .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered .nim-dialog--preview, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered .nim-dialog--text-preview, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected .nim-dialog--preview, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected .nim-dialog--text-preview, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic .nim-dialog--preview, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic .nim-dialog--text-preview, .nim-dialog:not(.nim-dialog_deleted):hover .nim-dialog--preview, .nim-dialog:not(.nim-dialog_deleted):hover .nim-dialog--text-preview, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered .nim-dialog--preview b, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_selected .nim-dialog--preview b, .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic .nim-dialog--preview b, .nim-dialog:not(.nim-dialog_deleted):hover .nim-dialog--preview b{
+    color: #67829E !important;
 }
 
 html.oldMessageBackground .nim-dialog--unread._im_dialog_unread_ct:empty {
-  bottom: 0px;
-  right: 0px;
-  border-radius: 0px;
-  width: 99%;
-  height: 75%;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  background: #edf1f5;
-  color: #67829E;
-  border-color: #DAE1E8;
-  z-index: 0;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 0px;
+    width: 99%;
+    height: 75%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    background: #edf1f5;
+    color: #67829E;
+    border-color: #DAE1E8;
+    z-index: 0;
 }
 
 html.oldMessageBackground .nim-dialog--unread._im_dialog_unread_ct:not(:empty) {
-  margin: 0px 3px;
-  background: #D1DAE3;
-  padding: 4px 4px 4px 4px;
-  font-weight: bold;
-  color: #436796;
-  border-radius: 2px;
-  z-index: 99;
+    margin: 0px 3px;
+    background: #D1DAE3;
+    padding: 4px 4px 4px 4px;
+    font-weight: bold;
+    color: #436796;
+    border-radius: 2px;
+    z-index: 99;
 }
 
 html.oldMessageBackground .nim-dialog--unread._im_dialog_unread_ct:not(:empty)::before {
-  content: "";
-  border-radius: 0px;
-  background: #edf1f5;
-  width: 551px;
-  height: 70px;
-  position: absolute;
-  z-index: -1;
-  top: -28px;
-  left: -503px;
-  opacity: 0.5;
+    content: "";
+    border-radius: 0px;
+    background: #edf1f5;
+    width: 551px;
+    height: 70px;
+    position: absolute;
+    z-index: -1;
+    top: -28px;
+    left: -503px;
+    opacity: 0.5;
 }
 
 html.oldMessageBackground .im-page--header.ui_search._im_dialogs_search {
-  z-index: 102;
+    z-index: 102;
 }
 
 /* Фиксированное меню*/
 
 #side_bar_inner_fixed {
-  margin-top: 0px !important;
-  top: 43px;
-  padding: 15px 0 10px;
+    margin-top: 0px !important;
+    top: 43px;
+    padding: 15px 0 10px;
 }
 
 
 /* Старые шрифты */
 
 html.oldFonts body {
-  font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
 }
 
 
@@ -150,10 +150,10 @@ html.oldFonts body {
 
 html.oldAudioSize .audio_play,
 html.oldAudioSize .audio_page_player .audio_page_player_play .icon {
-  border-radius: 20%;
-  background-position: -3px -3px;
-  width: 22px;
-  height: 22px;
+    border-radius: 20%;
+    background-position: -3px -3px;
+    width: 22px;
+    height: 22px;
 }
 
 html.oldAudioSize .audio_performer {
@@ -161,94 +161,106 @@ html.oldAudioSize .audio_performer {
 }
 
 html.oldAudioSize .audio_page_player_ctrl.audio_page_player_play._audio_page_player_play {
-  padding-top: 18px;
+    padding-top: 18px;
 }
 
 html.oldAudioSize .audio_play {
-  width: 18px;
-  height: 18px;
-  background-size: 8px;
-  background-position: 5px 4px;
+    width: 18px;
+    height: 18px;
+    background-size: 8px;
+    background-position: 5px 4px;
 }
 
 html.oldAudioSize .audio_play .icon {
-  width: 9px;
-  height: 9px;
+    width: 9px;
+    height: 9px;
 }
 
 html.oldAudioSize .audio_row .audio_play_wrap {
-  padding: 5px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
 }
 
 html.oldAudioSize .audio_page_player_ctrl.audio_page_player_play._audio_page_player_play.audio_playing .icon{
-  background-position: -3px -59px;
+    background-position: -3px -59px;
 }
 
 html.oldAudioSize .audio_row_playing .audio_play {
-  background-position: 5px -15px;
+    background-position: 5px -15px;
 }
 
 
 /* Высокий контраст */
 
 html.highContrast .module_header {
-  line-height: 30px;
-  color: #45688E !important;
-  background: #DEE5EB;
+    line-height: 30px;
+    color: #45688E !important;
+    background: #DEE5EB;
 }
 
 html.highContrast .module_header .header_label {
     color: #45688E !important;
 }
-
-html.highContrast .module_header .header_top .right_link {
-  color: inherit;
+html.highContrast .module_header .header_top{
+    line-height: 32px;
 }
-
+html.highContrast .wide_column .module_header .header_top{
+    padding-top: 0px; 
+    line-height: 32px;
+}
+html.highContrast .module_header .header_top .right_link {
+    color: inherit;
+}
+html.highContrast .wide_column .header_right_link{
+    padding-top: 0px;
+    line-height: 32px;
+}
+html.highContrast .header_right_link{
+    line-height: 32px;
+}
 html.highContrast .im-chat-input .im-chat-input--textarea .placeholder {
-  position: absolute;
-  top: 21px;
-  left: 2px;
-  width: 100%;
+    position: absolute;
+    top: 21px;
+    left: 2px;
+    width: 100%;
 }
 
 
 html.highContrast .im-page.im-page_classic .im-page--chat-input {
-  border-bottom: solid 15px #fff;
-  border-left: solid 1px #fff;
-  border-right: solid 2px #fff;
-  background: #f2f2f2;
+    border-bottom: solid 15px #fff;
+    border-left: solid 1px #fff;
+    border-right: solid 2px #fff;
+    background: #f2f2f2;
 }
 
 html.highContrast .im-chat-input .im-chat-input--text {
-  border: solid 1px #e4e6e9;
-  -o-transition: border-bottom-color 0.3s linear;
-  transition: border-color 0.3s linear;
-  padding: 2px;
-  padding-right: 25px;
+    border: solid 1px #e4e6e9;
+    -o-transition: border-bottom-color 0.3s linear;
+    transition: border-color 0.3s linear;
+    padding: 2px;
+    padding-right: 25px;
 }
 
 html.highContrast .im-page.im-page_classic .im-page--header-inner {
-  background: #f2f2f2;
+    background: #f2f2f2;
 }
 
 html.highContrast .im-page.im-page_classic .im-page--header-chat {
-  border-top: solid 17px #fff;
-  border-left: solid 1px #fff;
-  border-right: solid 1px #fff;
+    border-top: solid 17px #fff;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
 }
 
 html.highContrast .im-page.im-page_classic .im-page--header {
-  border-top: solid 15px #fff;
+    border-top: solid 15px #fff;
 }
 
 html.highContrast .wall_module > .page_block {
-  background: #DEE5EB;
+    background: #DEE5EB;
 }
 
 html.highContrast .wall_module > .page_block a {
-  color: #45688E;
-  border-bottom: none;
+    color: #45688E;
+    border-bottom: none;
 }
 
 
@@ -398,17 +410,17 @@ html.sizeOptimize .nim-dialog .nim-dialog--name{
 html.sizeOptimize .ui_rmenu_item, .ui_rmenu_subitem{
     height: 25px;
     line-height: 24px;
-	font-size: 11px !important; 
+    font-size: 11px !important; 
 }
 
 html.sizeOptimize .ui_rmenu_item, html.sizeOptimize .ui_rmenu_subitem{
-	height: 26px;
+    height: 26px;
     line-height: 25px;
 }
 
 html.sizeOptimize .wall_post_text{
-	line-height: 1.5;
-	
+    line-height: 1.5;
+
 }
 
 
@@ -438,21 +450,22 @@ html.sizeOptimize .side_bar_inner {
     width: 120px; 
 }
 html.sizeOptimize #side_bar .left_icon{
-	height: 22px;
-	margin-top: -2px;
+    height: 22px;
+    margin-top: -2px;
 }
 html.sizeOptimize #side_bar ol li{ margin-bottom: 1px;}
-
+html.sizeOptimize .wall_reply_text { line-height: 1.5; }
 
 
 /* Старая шапка */
 
 
 html.oldHead #page_header{
-   background: #507299;
-    wie-radius: 0px 0px 7px 7px;
+    background: #507299;
+    border-radius: 0px 0px 7px 7px;
     -webkit-border-radius: 0px 0px 7px 7px;
     border-bottom: 1px solid #466991;
+    margin: 0px;
 }
 html.oldHead #page_header_cont .back {
     background: #fff;
@@ -464,12 +477,21 @@ html.oldHead.oldLogo .top_home_logo{
     background-size: 100% !important;
     margin-left: -5px !important;
     margin-top: 5px !important;
-
 }
-
 html.oldHead #page_header_cont .back{
     background: rgba(0,0,0,0);
 }
+html.oldHead #page_header_cont{
+    position: absolute;
+}
+html.oldHead #page_header_wrap{
+    width: auto !important;
+}
+html.oldHead.imFixedHead  #page_header_cont{
+    position: fixed;
+    left: auto;
+    margin-left: -15px;
+} 
 
 
 html.oldPhoto .pv_cont .pv_left_wrap{
@@ -486,7 +508,7 @@ html.oldPhoto #layer, .pv_light #layer{
 html.oldPhoto #pv_photo{
     width: 100% !important;
     height: auto !important;
-       
+
 }
 html.oldPhoto #pv_narrow{
     width: 100% !important;
@@ -498,12 +520,12 @@ html.oldPhoto .pv_cont .pv_reply_form_wrap{
 html.oldPhoto .pv_cont{
     width:100% !important;
     max-width: 980px !important;
- }
+}
 
 html.oldPhoto #pv_photo img { 
     max-width: 100% !important; 
     height: auto !important; 
 }
 html.oldPhoto .photos_container_albums .photos_album_thumb{
-	width:225px;
+    width:225px;
 }
