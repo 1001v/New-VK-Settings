@@ -16,6 +16,8 @@ function resetOldHeadShifts() {
     jQuery(".im-page.im-page_classic .im-page--header").css('top', '');
     jQuery(".page_block .ui_search.ui_search_fixed").css('top', '');
     jQuery(".im-page.im-page_classic .im-page--header-chat").css('top', '');
+    jQuery("#profile #narrow_column").removeClass("fixed");
+    jQuery("#profile #narrow_column").css('margin-top', '15px');
 }
 
 function unlockTopMenu() {
