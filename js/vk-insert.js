@@ -21,7 +21,14 @@ function resetOldHeadShifts() {
 }
 
 function unlockTopMenu() {
-    if (window.location.href.indexOf("/im") == -1) {
+	if (window.location.href.indexOf(".com/audios") !== -1) {
+		if (window.pageYOffset > 45) {
+			jQuery('.audio_rows_header').css('top', '0');
+		} else {
+            jQuery('.audio_rows_header').css('top', '42px');
+        }
+	}
+    if (window.location.href.indexOf(".com/im") == -1) {
         if (window.pageYOffset > 45) {
             jQuery("#side_bar_inner_fixed").css('top', '-10px');
             jQuery(".im-right-menu.ui_rmenu").css('top', '-10px');
@@ -38,16 +45,16 @@ function unlockTopMenu() {
 
 var functions = {
     "oldHead": function () {
-        if ((window.location.href.indexOf("/im") !== -1) || (window.location.href.indexOf("/audios") !== -1)) {
+        if (window.location.href.indexOf(".com/im") !== -1) {
             // если в диалоге или в аудиозаписях - возвращаем шапку и сдвинутые меню на место
             resetOldHeadShifts();
             jQuery('html').addClass('imFixedHead');
         } else {
-          jQuery('html').removeClass('imFixedHead');
+			jQuery('html').removeClass('imFixedHead');
         }
         $("html head title").bind("DOMSubtreeModified", function () {
-            if (window.location.href.indexOf("/im") !== -1) {
-                // если в диалоге - возвращаем шапку и сдвинутые меню на место
+            if (window.location.href.indexOf(".com/im") !== -1) {
+                // если в диалоге или аудиозаписях - возвращаем шапку и сдвинутые меню на место
                 resetOldHeadShifts();
                 jQuery('html').addClass('imFixedHead');
             } else {
@@ -79,11 +86,11 @@ var functions = {
         addInMenu("<li><a href=\"/settings\" onclick=\"return nav.go(this, event, {noback: true, params: {_ref: 'left_nav'}});\" class=\"left_row\"><span class=\"left_fixer\"><span class=\"left_count_wrap fl_r left_void\"><span class=\"inl_bl left_count_sign\"></span></span><span class=\"left_icon fl_l\"></span><span class=\"left_label inl_bl\">" + (jQuery("#l_pr .left_label.inl_bl").text() == "My Profile" ? "Settings" : "Настройки") + "</span></span></a><div class=\"left_settings\" onclick=\"menuSettings(0)\"><div class=\"left_settings_inner\"></div></div></li>");
     },
     "fixNarrowColumn": function () {
-        if (window.location.href.indexOf("/feed") !== -1) {
+        if (window.location.href.indexOf(".com/feed") !== -1) {
             jQuery("#narrow_column:has(#feed_rmenu)").addClass("position_right");
         }
         $("html head title").bind("DOMSubtreeModified", function () {
-            if (window.location.href.indexOf("/feed") !== -1) {
+            if (window.location.href.indexOf(".com/feed") !== -1) {
                 jQuery("#narrow_column:has(#feed_rmenu)").addClass("position_right");
             }
         });
