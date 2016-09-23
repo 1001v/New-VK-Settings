@@ -21,7 +21,7 @@ function resetOldHeadShifts() {
 }
 
 function unlockTopMenu() {
-    if (window.location.href.indexOf("/im") == -1) {
+    if (window.location.href.indexOf("com/im") == -1) {
         if (window.pageYOffset > 45) {
             jQuery("#side_bar_inner_fixed").css('top', '-10px');
             jQuery(".im-right-menu.ui_rmenu").css('top', '-10px');
