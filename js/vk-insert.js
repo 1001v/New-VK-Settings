@@ -46,7 +46,7 @@ function unlockTopMenu() {
 var functions = {
     "oldHead": function () {
         if (window.location.href.indexOf(".com/im") !== -1) {
-            // если в диалоге или в аудиозаписях - возвращаем шапку и сдвинутые меню на место
+            // если в диалоге - возвращаем шапку и сдвинутые меню на место
             resetOldHeadShifts();
             jQuery('html').addClass('imFixedHead');
         } else {
@@ -54,7 +54,7 @@ var functions = {
         }
         $("html head title").bind("DOMSubtreeModified", function () {
             if (window.location.href.indexOf(".com/im") !== -1) {
-                // если в диалоге или аудиозаписях - возвращаем шапку и сдвинутые меню на место
+                // если в диалоге - возвращаем шапку и сдвинутые меню на место
                 resetOldHeadShifts();
                 jQuery('html').addClass('imFixedHead');
             } else {
